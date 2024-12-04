@@ -1,0 +1,74 @@
+h1,
+h2,
+h3,
+h4 {
+  margin: 0.1rem 0;
+  font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color:blue;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+  h2 {
+    font-size: 1.5rem;
+    padding-left: 20px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    padding-left: 40px;
+  }
+
+  h4 {
+    font-size: 1rem;
+    font-style: italic;
+    padding-left: 60px;
+  }
+
+.side-picture {
+  width: 500px;
+  right: 0;
+}
+  
+
+#topnav {
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background-color: #00ff00;
+
+  font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.nav-link {
+  display: inline-block;
+  width: fit-content;
+  height: 55px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  color: rgb(255, 0, 0);
+
+  /* centering text */
+  text-align: center;    /* horizontally */
+  line-height: 55px;     /* vertically */
+  
+  text-decoration: none;
+}
+
+#content {
+  margin-top: 60px;
+  background-image: url("Images/robozz-electro-man.gif");
+}
