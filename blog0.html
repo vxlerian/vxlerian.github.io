@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>v4l3rian</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="starry">
+        <div class="white">
+            <nav class="menu">
+                <ul class="blog-link">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <h1>blog 0  5/12/24</h1>
+            <h2 class="box, sci-fi-panels">Hello and welcome to my super sweet blog! I'm using this to document my progress in studying computers. Today and yesterday have been spent learning how to build this website. Because my attention span is short, I haven't made much progress. To compensate for my lack of skills, I am temporarily leaning into the janky amateur web aesthetic until I figure out how to do cool js stuff, centre divs and the like. I also hope to learn to write more naturally so that people (such as yourself) might actually be able to read my blog without having to repeatedly reread sentences to figure out what I am trying to say. For now, the lorem ipsum in the home page will do.</h2>
+            <h3>Today I learnt how to use documentation for html, css and js. I now know what the different padding stuff is, how to use fonts, images, gifs etc. (see below for proof of this acquired knowledge.) I made sure to title my first blog: 'blog 0' because lists begin with zero and I am a nerd. I think the more important lesson is that we must stay open minded and not allow hardship to cloud our judgement.</h3>
+
+            <img
+            class="side-picture"
+            src="Images/blog_0_progress.png"
+            alt="A screenshot of the first iteration of the blog homepage">
+            <img
+            class="side-picture"
+            src="Images/dog_with_apple_in_its_mouth.jpg"
+            alt="Image of an iconic dog with an iconic apple in its mouth" />
+            <div>
+                <p id="hidden_message">
+                body paragraph here
+                </p>
+                <button onclick="document.getElementById('hidden_message').innerHTML = 'wuhluhluh';">secret message</button>
+            </div>
+        </div>
+        <div class="white box sci-fi-panels">
+            <h2>Linux Terminal</h2>
+            <p>
+                The mythical linux terminal is a command line input (CLI) tool which allows users to perform certain actions, truly an untamed beast. The terminal has a 'working drive' meaning the current file directory. The default directory is 'home/username'. Although there are parent folders, messing with them might fuck up your machine and generally you don't actively work with them. 
+            </p>
+            <li>
+                here are some commands to spice up your life:
+                <br/>man [command] gives you the docs about that command.
+                <br/>sudo... is short for 'super user do' executing the command with higher perms.
+                <br/>cd switches the working drive. ~ refers to the default directory, . refers to the current working directory and .. refers to its parent directory.
+                <br/>pwd prints the current directory
+                <br/>ls prints a list of the directory contents. I often use -al as parameters (a: all, l:long listing format)
+                
+                <br/>there are commands that actually do stuff being just navigation.
+
+                <br/>rm removes files or directories
+                <br/>touch  creates an empty file with an inputted name and file extension
+                <br/>codium opens the file or directory in codium vscode (this only applies if you use codium (I hope that's obvious))
+
+                <br/>open opens a file in the file explorer
+                <br/>chmod changes file mode bits. these bits are effectively settings including read, write and execute for chosen users.
+
+                <br/>not to mention there are a handful of git related commands.
+
+                <br/>git clone - clone a repository into a new directory
+                <br/>git pull - fetch from another repository, 
+                <br/>git add - adds stuff to the index. basically lets git know you made some changes
+                <br/>git commit - commit changes (including the aforementioned added ones) to the repository (but only locally)
+                <br/>git push - updates the local commits to the network
+
+                <br/>it is important to have these specialised git tools to keep things organised. things must remain organised.
+            </li>
+            <h2>
+                HTML CSS JS
+            </h2>
+            <p>
+                these three are the bones, skin and nervous system of websites. Yes, I came up with this analogy and I am proud of it. HTML is a mark-up language, not a scripting language. It is effectively a list of instructions for your computer to display websites. It's cool because it takes care of a number of things for you, such as weird screen resolutions or compatibility issues, all while being very simple. Although it's awesome having HTML do this heavy lifting for you, there are times when you actually want control and you have to pry it out of HTML's hands with janky javascript. CSS (stylesheets) are super easy to use and they allow you to customise your objects in HTML further. I also have a newfound appreciation for HTML nesting and parent child connections, such as how children inherit all their attributes from their parents. This way, things can be structured really easily and attributes can be applied to many elements at once if you organised your stuff properly.
+            </p>
+            <h3>
+                how it works (to my knowledge)
+            </h3>
+            <p>
+                html does not use indentation, but rather start and end tags where everything within is considered a child, including plain contents. indentation is still incredibly useful for readability. both tagnames have the type of object in its name, and the second has a slash to indicate that it's the closing one. each html file has html and /html at the top and bottom of the doc respectively. it always has two children: head and body with similar formatting. head holds information about the file, where to find its CSS and metadata, whereas the body holds the actual page contents. everything else is similarly nested within. these objects can be assigned at max one id and multiple classes. Let it be known that classes does not mean classes in the same sense, although there is some cross-over. The main similarity is that functionally, classes are tags which you can slap on any object. That object then gains the properties of that class as specified within the CSS. That way, the HTML file strictly contains the contents of the site and formatting styles can have its own little side thing. It also reduces redundancy as you can slap a class on many objects. An ID is the same in almost every way except it works for strictly one object and has slightly different syntax. (# instead of . prefix). If you want your website to have any kind of interactivity, you need to use Javascript to actually code behaviours. This is, for the most part, challenging as HTML prefers to do its own thing and JS just has to manhandle it like the parent of a fussy child. 
+                <br/>
+                <br/>I'm definitely blowing this out of proportion because I can't get it to work but this is definitely how it feels sometimes. I'm sure I'll get the hang of things eventually. For example, html has cool ways to dynamically shuffle objects around the page depending on zoom and screen resolution. Let's say you want an image to appear at the position where you click on the screen. First you gotta access the object in your js. Then, you get the clicked position. Then you have to consider if thoses coords are in relation to the viewport, or if they're global or if they're in local space in respect to some object, and then you have to also figure out what space you have to convert it to. If you want this effect to happen strictly inside a particular div container, you could have to convert the global space coords into the local space coords of that parent. Then, you set the objects position to that point or animate it or whatever. Also, just having the script access and object and edit its properties can be a hassle. Eventually I will figure this thing out.
+            </p>
+            <img
+            src="Images/never_give_up.jpg"
+            alt="Two men mining for diamonds, one giving up and turning back right before a massive cluster of diamonds.">
+            <p>I will not allow this hardship to cloud my judgement and discourage me from my destiny: web development</p>
+        </div>
+    </body>
+</html>
