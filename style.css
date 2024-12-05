@@ -7,7 +7,14 @@ h4 {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    color:blue;
+}
+
+.white {
+  color:white;
+}
+
+.red {
+  color:#fb0a0a;
 }
 
 h1 {
@@ -31,8 +38,12 @@ h1 {
   }
 
 .side-picture {
-  width: 500px;
-  right: 0;
+  float: right;
+}
+
+#follow {
+  position: absolute;
+  text-align: center;
 }
   
 
@@ -68,7 +79,59 @@ h1 {
   text-decoration: none;
 }
 
+.blog-container {
+  display: block;
+  width: fit-content;
+  padding: 6px;
+  margin: 5px;
+  background: linear-gradient(#262b46, #365364);
+  border-radius: 13px;
+}
+.blog-link {
+  display: inline-block;
+  padding: 10px;
+  font-size: large;
+  
+
+  background-image: url("Images/rainbow.gif");
+
+  /* centering text */
+  text-align: center;    /* horizontally */
+  
+border-radius: 10px;
+
+  text-decoration: none;
+}
+.blog-details {
+  padding-left: 10px;
+  display: inline-block;
+  color: white;
+  font-size: medium;
+}
+
+
 #content {
   margin-top: 60px;
   background-image: url("Images/robozz-electro-man.gif");
+}
+
+#starry {
+  background-image: url("Images/starry_background.gif");
+}
+#hearts {
+  background-image: url("Images/hearts.gif")
+}
+
+.sci-fi-panels {
+  background-image: -webkit-cross-fade(url("Images/black.png"), url("Images/sci_fi_panels.jpeg"), 50%);
+}
+
+
+
+.box {
+  margin: 10px;
+  padding: 10px;
+  border: 10px;
+  border-color: #00ff00;
+  border-radius: 20px;
 }
